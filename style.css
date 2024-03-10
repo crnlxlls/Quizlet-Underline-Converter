@@ -48,7 +48,7 @@ form {
     text-align: left;
 }
 
-.input-group {
+.text-group {
     position: relative;
 }
 
@@ -120,6 +120,8 @@ input:valid + .placeholder {
 }
 
 .history {
+    width: 100%;
+    max-width: 500px;
     color: white;
 
     background-color: var(--overlay-color);
@@ -138,4 +140,23 @@ input:valid + .placeholder {
 .history p {
     line-height: 1rem;
     letter-spacing: 2px;
+    text-align: left;
+}
+
+.history-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; /* Center the items vertically */
+}
+
+#buttonTrash {
+    margin-left: auto;
+    background-color: var(--accent-color-darker);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }

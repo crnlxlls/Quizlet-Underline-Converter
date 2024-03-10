@@ -53,13 +53,20 @@ function copyText() {
 }
 
 function setHistory(inputText, outputText) {
-    const historyElement = document.getElementById("history");
+    const historyElement = document.getElementById("history-contents");
     const newEntry = document.createElement("p");
     const entryContent = inputText + " = " + outputText;
 
     newEntry.textContent = entryContent;
     historyElement.appendChild(newEntry);
-  }
+}
+
+function deleteHistory() {
+    const historyElement = document.getElementById("history-contents");
+    const outputElement = document.getElementById('outputText');
+    historyElement.innerHTML = "";
+    outputElement.value = "";
+}
 
 
 
