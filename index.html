@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Underline Converter</title>
+    <link rel="icon" href="icon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <main>
+        <p class="title">Text to Underline Converter</p>
+        <p class="subtitle">Developed by: C. ALP</p>
+
+        <div class="transact">
+            <form onkeydown="return event.key !== 'Enter'">
+                <h1 class="text-header">Input Text</h1>
+                <div class="input-group">
+                    <input type="text" class="input" id="inputText" required>
+                    <label class="placeholder">Text</label>
+                    <button type="button" id="buttonEnter" onclick="transformText()" tabindex="-1">▶</button>
+                </div>
+            </form>
+
+            <form>
+                <h1 class="text-header">Output Text</h1>
+                <div class="input-group">
+                    <input type="text" class="output" id="outputText" onclick="copyText()" readonly>
+                    <label class="placeholder"></label>
+                    <p id="check">✅</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="history" id="history">
+            <h1>History</h1>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
