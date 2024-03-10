@@ -14,17 +14,12 @@
 
         <div class="transact">
             <form onkeydown="return event.key !== 'Enter'">
-                <h1 class="text-header">Input Text</h1>
-                <div class="input-group">
+                <h1 class="text-header">Convert Text</h1>
+                <div class="text-group">
                     <input type="text" class="input" id="inputText" required>
                     <label class="placeholder">Text</label>
                     <button type="button" id="buttonEnter" onclick="transformText()" tabindex="-1">▶</button>
-                </div>
-            </form>
 
-            <form>
-                <h1 class="text-header">Output Text</h1>
-                <div class="input-group">
                     <input type="text" class="output" id="outputText" onclick="copyText()" readonly>
                     <label class="placeholder"></label>
                     <p id="check">✅</p>
@@ -42,7 +37,7 @@
             </div>
         </div>
 
-        
+
     </main>
 
     <script type="text/javascript" src="script.js"></script>
